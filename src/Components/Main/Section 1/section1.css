@@ -1,0 +1,29 @@
+.mobileSec1,.tabletSec1{
+    display: none;
+}
+.desktopSec1{
+    display: block;
+}
+@media only screen and (max-width: 999px) {
+    .desktopSec1{
+        display: none;
+    }
+    .tabletSec1{
+        width: 100%;
+        display: block;
+    }
+    .mobileSec1{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .desktopSec1{
+        display: none;
+    }
+    .tabletSec1{
+        display: none;
+    }
+    .mobileSec1{
+        display: block;
+    }
+}

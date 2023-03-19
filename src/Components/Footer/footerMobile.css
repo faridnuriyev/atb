@@ -1,0 +1,191 @@
+:root {
+    --footer-border-color: #8947bd;
+    --footer-li-a-hover-color: #f4c900;
+    --footer-text-color: #fff;
+}
+.footer-mob-container {
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 52px 0 52px;
+    width: 95%;
+    border-bottom: 1px solid var(--footer-border-color);
+}
+.footer-firstMenuMob {
+    display: flex;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--footer-border-color);
+}
+.mobile-footer-section2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.footer-firstMenuMob ul li {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.footer-firstMenuMob ul li a {
+    text-decoration: underline;
+    color: #fff;
+}
+.footer-firstMenuMob ul li a:hover {
+    text-decoration: none;
+    color: var(--footer-li-a-hover-color);
+}
+.callCenterMobile {
+    display: flex;
+    margin-bottom: 30px;
+}
+.callCenterIconMobile {
+    width: 112px;
+    position: relative;
+    padding: 10px;
+}
+.callCenterIconMobile a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+.callCenterIconMobile a img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.callCenterInfoMobile {
+    border-left: 2px solid var(--footer-text-color);
+    padding: 10px 0 10px 10px;
+}
+
+.callCenterInfoMobile > span {
+    font-size: 12px;
+}
+.firsTextFooterMobile span a {
+    color: var(--footer-text-color);
+    font-weight: bold;
+}
+.suggestionsMobile {
+    font-size: 13px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+.suggestionsMobile ul li {
+    margin-bottom: 8px;
+}
+.suggestionsMobile ul li a {
+    color: var(--footer-text-color);
+    text-decoration: underline;
+    position: relative;
+    font-size: 16px;
+}
+.suggestionsMobile ul li a:hover {
+    text-decoration: none;
+}
+.faq::before {
+    background: url(../../../public/assets/img/sprite.png);
+    background-position: -374px 0;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    content: "";
+    left: -25px;
+    top: 0;
+}
+.survey::before {
+    background: url(../../../public/assets/img/sprite.png);
+    background-position: -400px 0;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    content: "";
+    left: -25px;
+    top: 3px;
+}
+.suggest::before {
+    background: url(../../../public/assets/img/sprite.png);
+    background-position: -424px 0;
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    content: "";
+    left: -25px;
+    top: 0;
+}
+.mobile-footer-section3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--footer-border-color);
+    border-top: 1px solid var(--footer-border-color);
+    margin-bottom: 40px;
+}
+.mobile-footer-section3 a {
+    width: 24px;
+    height: 24px;
+}
+.mobile-footer-section4 {
+    width: 100%;
+    border-bottom: 1px solid var(--footer-border-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.mobile-footer-section4 > div {
+    margin-bottom: 20px;
+}
+.mobile-footer-section4 div ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.mobile-footer-section4 div ul li a {
+    color: var(--footer-text-color);
+}
+.mobile-footer-section4 ul li a::before {
+    position: absolute;
+    content: "•";
+    font-size: 14px;
+    padding-right: 5px;
+    color: var(--footer-text-color);
+    left: 0;
+    top: 0;
+}
+.mobile-footer-section4 ul li a:hover {
+    color: var(--footer-li-a-hover-color);
+}
+.mobile-footer-section5 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.footerAdressMob {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.footerIconsMob {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.mobile-footer-section6 {
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .footer-mob-container {
+        padding: 350px 52px 0 52px;
+    }
+}

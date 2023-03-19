@@ -1,0 +1,183 @@
+.headerMenuMobile {
+    padding-bottom: 40px;
+    color: #262626;
+}
+.mobLangHeader {
+    color: #6d19ad;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+.firstBlock {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.firstBlock2 {
+    padding-right: 55px;
+}
+.firstBlock2 span {
+    font-size: 14px;
+    color: #262626;
+    cursor: pointer;
+    display: block;
+    padding: 20px 20px 20px 0;
+}
+.firstBlock2 span::after {
+    font-size: 14px;
+    color: #262626;
+    position: absolute;
+    content: "";
+    background: url("../../../../public/assets/img/sprite.png") -468px -34px;
+    width: 10px;
+    height: 7px;
+    right: 100px;
+    top: 27px;
+    box-sizing: border-box;
+}
+.secondBlock {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #f9f9f9;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.secondBlock ul li {
+    margin-bottom: 10px;
+}
+.secondBlock ul li a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    padding-right: 20px;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: inherit;
+}
+.secondBlock ul li a:hover {
+    color: #999;
+}
+.headerMenuApp {
+    color: #6d19ad !important;
+}
+.headerMenuApp:hover {
+    color: #999 !important;
+}
+.secondBlock ul li a::after {
+    position: absolute;
+    content: "";
+    background: url("../../../../public/assets/img/sprite.png") -516px -33px;
+    width: 8px;
+    height: 13px;
+    right: 0;
+    top: 11px;
+}
+.withOutArrow::after {
+    background: url("../../../../public/assets/img/sprite.png") -6000px -33px !important;
+}
+.thirdBlock,
+.fourthBlock {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+.thirdBlock p,
+.fourthBlock p {
+    font-size: 12px;
+    color: #999999;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.thirdBlock ul li,
+.fourthBlock ul li {
+    margin-bottom: 10px;
+}
+.thirdBlock ul li a,
+.fourthBlock ul li a {
+    padding: 5px 0;
+    display: inline-block;
+    color: inherit;
+    font-family: "Raleway", sans-serif;
+}
+.thirdBlock ul li a:hover,
+.fourthBlock ul li a:hover {
+    color: #999;
+}
+.fifthBlock {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 30px 0 15px 0;
+    margin: 0 20px;
+}
+.mobMenuCallCenter {
+    font-size: 12px;
+    color: #999999;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.siteRow {
+    margin-bottom: 20px;
+}
+.siteRow a {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    color: inherit;
+    font-weight: bold;
+}
+.siteRow a:hover {
+    color: #999;
+}
+.siteRow span {
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+}
+.fifthBlock ul li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+.fifthBlock ul li a {
+    padding: 5px 0;
+    display: inline-block;
+    color: inherit;
+}
+.fifthBlock ul li a:hover {
+    color: #999;
+}
+.fifthBlock ul li a::before {
+    position: absolute;
+    content: "•";
+    font-size: 16px;
+    left: 0;
+    top: 4px;
+    color: #6c19ac;
+}
+.sixthBlock {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 17px 0 15px;
+    text-align: center;
+    margin: 0 20px 30px 20px;
+}
+.fbIcon,
+.inIcon,
+.instIcon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 15px;
+    background: url("../../../../public/assets/img/sprite.png") 0 -89px;
+}
+.inIcon {
+    background: url("../../../../public/assets/img/sprite.png") -33px -89px;
+}
+.instIcon {
+    background: url("../../../../public/assets/img/sprite.png") -68px -89px;;
+}

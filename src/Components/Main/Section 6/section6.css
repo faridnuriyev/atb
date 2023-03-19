@@ -1,0 +1,197 @@
+.sec-6-desk{
+    margin-top: 50px;
+    padding-left: 25px;
+}
+.sec-6{
+    margin-bottom: 30px;
+    padding: 0 52px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.sec-6-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 25px;
+    font-family: "Raleway", sans-serif;
+}
+.sec-6-h2 {
+    padding-bottom: 15px;
+    color: #262626;
+    font-size: 32px;
+    font-weight: normal;
+    font-family: Raleway;
+}
+
+.sec-6-p {
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-bottom: 2px solid #f4c900;
+}
+.sec-6-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.sec-6-main-leftSide {
+    padding-right: 40px;
+}
+.sec-6-main-rightSide {
+    margin-top: 12px;
+    border: 1px dashed #dbdbdb;
+    padding: 30px 20px 30px 30px;
+}
+.sec-6-info {
+    margin-bottom: 30px;
+}
+.sec-6-info p {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family: "Raleway", sans-serif;
+}
+.sec-6-info-header {
+    font-size: 18px !important;
+    color: #262626 !important;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.sec-6-info a {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: #474747;
+}
+.sec-6-main-leftSide > a {
+    font-size: 18px;
+    color: #262626;
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+    text-decoration: underline;
+}
+.sec-6-main-leftSide > a::after {
+    content: "";
+    background: url("../../../../public/assets/img/sprite.png") -182px 0;
+    width: 7px;
+    height: 9px;
+    font-size: 18px;
+    color: #262626;
+    display: inline-block;
+    margin-left: 10px;
+}
+.sec-6-main-leftSide > a:hover{
+    text-decoration: none;
+}
+.sec-6-main-rightSide p {
+    color: #999;
+    margin-bottom: 30px;
+}
+.sec-6-main-rightSide {
+    position: relative;
+    width: 75%;
+    height: 100%;
+}
+.sec-6-main-rightSide span {
+    position: absolute;
+    top: -20px;
+    background: #fff;
+    color: #262626;
+    font-size: 26px;
+    font-family: "Raleway", sans-serif;
+}
+.sec-6-main-rightSide div input {
+    color: #474747;
+    background: #fff;
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    padding: 0 15px;
+    outline: none;
+}
+.sec-6-btn{
+    margin: 40px 20px 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-6-btn button{
+    width: 240px;
+    max-width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 15px;
+    border: none;
+    background:#f4c900;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.sec-6-btn button:hover{
+    background: #6c19ac;
+}
+.inputName{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdb;
+}
+.sec-6-nameIcon{
+    width: 16px;
+    height: 16px;
+    background: url("../../../../public/assets/img/sprite.png") -320px 0;
+    padding-left: 20px;
+    margin-left: 15px;
+}
+.inputNumb{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdb;
+}
+.sec-6-numberIcon{
+    width: 16px;
+    height: 16px;
+    background: url("../../../../public/assets/img/sprite.png") -346px 0;
+    padding-left: 20px;
+    margin-left: 15px;
+}
+.sec-6-mobile{
+    display: none;
+}
+@media only screen and (max-width: 999px) {
+    .sec-6{
+        margin-bottom: 0;
+        padding: 0 ;
+    }
+    .sec-6-desk{
+        display: none;
+    }
+    .sec-6-mobile{
+        margin: 40px 40px 100px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sec-6-main{
+        flex-direction: column;
+    }
+    .sec-6-main-rightSide{
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+

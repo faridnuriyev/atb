@@ -1,0 +1,54 @@
+.sec-4-dashed-area {
+    border: 1px dashed #e6e6e6;
+    padding: 0 52px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: block;
+}
+.sec-4-dashed-area span {
+    color: #262626;
+    background: #fff;
+    font-size: 26px;
+    position: absolute;
+    bottom: 80px;
+    padding: 0 10px;
+}
+.sec-4-cards a img {
+    width: 185px;
+    height: 116px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.sec-4-cards {
+    display: flex;
+    width: max-content;
+    gap: 11px;
+    background: #fff;
+    position: absolute;
+    top: 40px;
+}
+.sec-4-cards a img:hover {
+    box-shadow: 2px 3px 4px 0px rgb(0 0 0 / 30%);
+}
+.underLine-sec4 {
+    padding: 150px 52px 0 52px;
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+}
+.dashed-area-swiper{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .sec-4-dashed-area {
+        display: none;
+    }
+    .underLine-sec4 {
+        display: none;
+    }
+    .dashed-area-swiper{
+        display: block;
+    }
+}

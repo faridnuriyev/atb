@@ -1,0 +1,203 @@
+:root {
+    --text-color: #fff;
+}
+.sec-7-position {
+    position: relative;
+    top: 150px;
+}
+.section7 {
+    position: relative;
+}
+.sec-7-Mobapp {
+    position: relative;
+}
+.mobApp-first {
+    width: 590px;
+    top: -55px;
+
+    position: absolute;
+    left: 65px;
+    bottom: 0;
+    margin: auto;
+}
+.mobApp-first a img {
+    width: 100%;
+    display: block;
+}
+.mobApp-second {
+    display: none;
+    width: 590px;
+    top: -55px;
+    position: absolute;
+    left: 65px;
+    bottom: 0;
+    margin: auto;
+}
+.mobApp-second a img {
+    width: 100%;
+    display: block;
+}
+.mobApp-bg {
+    background: url("../../../../public/assets/img/mobAppBg.png");
+    padding-top: 90px;
+    padding-bottom: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 40px 52px 90px 52px;
+}
+.mobApp-third {
+    padding-left: 640px;
+    color: var(--text-color);
+    min-height: 140px;
+    display: block;
+}
+.mobApp-third a {
+    display: block;
+}
+.mobApp-title {
+    font-variant-numeric: lining-nums;
+    font-family: "Raleway", sans-serif;
+    color: var(--text-color);
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.mobApp-text {
+    color: var(--text-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+}
+.section-7-tablet {
+    display: none;
+}
+.sec-7-mobile {
+    display: none;
+}
+body{
+    overflow-x: hidden;
+}
+@media only screen and (max-width: 999px) {
+    .section-7-tablet {
+        display: block;
+    }
+    .section-7 {
+        display: none;
+    }
+    .section-7-tablet {
+        width: 95%;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 52px;
+        position: relative;
+    }
+    .section-7-tablet-container {
+        position: relative;
+    }
+    .mobileImgTablet1 {
+        width: 390px;
+        top: -55px;
+        left: 35px;
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+    }
+    .mobileImgTablet1 a img {
+        width: 100%;
+        display: block;
+    }
+    .mobileImgTabletBg {
+        background: url("../../../../public/assets/img/mobAppBg.png");
+        padding-top: 30px;
+        padding-bottom: 90px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+    .mobileImgTabletInfo {
+        padding-left: 450px;
+        min-height: 130px;
+        color: #fff;
+        min-height: 140px;
+        display: block;
+    }
+    .tabletTitle {
+        font-variant-numeric: lining-nums;
+        font-family: "RalewayBold", "Trebuchet MS", sans-serif;
+        color: #fff;
+        margin-bottom: 15px;
+        font-size: 32px;
+    }
+    .tabletTitleSecondSide {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .sec-7-mobile {
+        display: block;
+    }
+    .section-7 {
+        display: none;
+    }
+    .section-7-tablet {
+        display: none;
+    }
+    .section-7-mobile {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 52px;
+        position: relative;
+    }
+    .section-7-mobile-container {
+        position: relative;
+        top: 173px
+    }
+    .mobileImgMob {
+        width: 236px;
+        top: 0;
+        position: relative;
+        left: 0;
+        margin: 0 auto;
+        bottom: 0;
+    }
+    .mobileImgMob a img {
+        width: 100%;
+        display: block;
+    }
+    .mobileImgMobBg {
+        background: url("../../../../public/assets/img/mobAppBg.png");
+        padding-top: 30px;
+        padding-bottom: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+    .mobileImgMobInfo {
+        text-align: center;
+        padding-left: 0px;
+        min-height: 120px;
+        color: #fff;
+        display: block;
+    }
+    .mobTitle {
+        font-variant-numeric: lining-nums;
+        font-family: "RalewayBold", "Trebuchet MS", sans-serif;
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .mobTitleSecondSide {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+}

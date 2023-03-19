@@ -1,0 +1,31 @@
+.sec-2{
+    background: url('../../../../public/assets/img/sec_2_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 30px 52px;
+    font-family: "Raleway", sans-serif;
+}
+.sec-2-title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #dbdbdb;
+}
+.sec-2-title h2{
+    display: flex;
+    padding-bottom: 15px;
+    color: #262626;
+    font-size: 32px;
+    font-weight: normal;
+}
+.sec-2-credit{
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: #262626;
+    border-bottom: 2px solid #f4c900;
+}

@@ -1,0 +1,289 @@
+.headerMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: gray;
+    z-index: 6;
+}
+a {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.header-logo img {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+.headerMain-right {
+    width: 100%;
+}
+.headerMain-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.firstPart a,
+.secondPart a {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    color: #262626;
+}
+.firstPart,
+.secondPart {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.secondPart {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.headerMain-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+}
+
+.headerMain-menu a {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+.firstPart a {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+.firstPart a:hover,
+.secondPart a:hover {
+    color: #999;
+}
+.secondPart > a {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+.secondPart ul li a {
+    padding-right: 10px;
+    border-right: 1px solid #dfdfdf;
+    font-size: 14px;
+}
+.search {
+    display: block;
+    content: " ";
+    background: url("../../../../public/assets/img/sprite.png") -46px 0;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 0px;
+    border: none;
+}
+.headerMain-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.headerMain-bottom-menu ul {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+}
+.headerMain-bottom-menu ul li a {
+    padding: 0 10px 15px 10px;
+    color: #262626;
+    font-size: 14px;
+}
+.headerMain-bottom-menu ul li a:hover {
+    color: #999;
+}
+.atb360App {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 0.25em;
+    background-color: #6c19ac;
+    border: none;
+    padding: 2px 20px 2px 30px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "RalewayBold", "Trebuchet MS", sans-serif;
+}
+.atb {
+    font-size: 14px;
+}
+
+.overflow {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #f4c900;
+    z-index: 5;
+    top: 0;
+    opacity: 0.5;
+}
+
+.menu-header {
+    background-color: white;
+    height: 447px;
+    width: 100%;
+    position: absolute;
+    z-index: 6;
+}
+.bankInformation {
+    position: relative;
+}
+.bankInformation:hover .bankInformationDrop {
+    height: 285px;
+    opacity: 1;
+}
+.bankInformationDrop li:hover,
+.langChange li:hover {
+    color: #999;
+}
+.bankInformationDrop {
+    font-family: "RalewayBold", "Trebuchet MS", sans-serif;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: flex-start !important;
+    position: absolute;
+    background: white;
+    padding: 5px 0 5px 10px;
+    width: 275px;
+    color: #000;
+    top: 38px;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 30%);
+    left: -10px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.langMenu {
+    position: relative;
+}
+.langChange {
+    font-family: "RalewayBold", "Trebuchet MS", sans-serif;
+    flex-direction: column;
+    font-size: 14px;
+    align-items: flex-start !important;
+    position: absolute;
+    background: white;
+    padding: 5px 0 5px 10px;
+    width: 50px;
+    color: #000;
+    top: 38px;
+    box-shadow: 0px 3px 5px 0px #0000004d;
+    left: -10px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.bankInformationDrop li a,
+.langMenu li a {
+    border: 0 !important;
+    cursor: pointer;
+}
+.bankInformation > a::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    right: 8px;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    height: 3px;
+    background: url("../../../../public/assets/img/sprite.png") -80px 0;
+}
+.bankInformation > a {
+    padding-right: 20px !important;
+}
+.langMenu:hover .langChange {
+    height: 60px;
+    opacity: 1;
+}
+.langMenu > a {
+    padding-right: 20px !important;
+}
+.langMenu > a::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    right: 8px;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    height: 3px;
+    background: url("../../../../public/assets/img/sprite.png") -80px 0;
+}
+.header-mobile {
+    display: none;
+}
+@media only screen and (max-width: 1000px) {
+    .headerMain {
+        display: none;
+    }
+    .header-leftSide-mobile {
+        display: flex;
+    }
+    .hamburgerMenu {
+        background: transparent;
+        color: black;
+        border: none;
+        font-size: 22px;
+    }
+    .hamburgerMenu:hover {
+        background: transparent;
+        color: #000;
+    }
+    .header-logo-mobile {
+        width: 80px;
+        padding: 10px 0;
+    }
+    .header-mobile {
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-logo-mobile a img {
+        display: block;
+        width: calc(100% - 20px);
+    }
+    .header-mobile > a {
+        cursor: pointer;
+        width: 66px;
+        height: 25px;
+    }
+    .header-mobile > a img {
+        width: 66px;
+        height: 25px;
+    }
+
+    .header {
+        position: fixed;
+    }
+    .offcanvas {
+        background: red;
+        position: absolute;
+        height: 100vh;
+    }
+    .mobHeaderSuper{
+        display: flex;
+        align-items: center;
+    }
+    .header-mobile{
+        width: 90%;
+    }
+}
