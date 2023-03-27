@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 
 function Sec4MobCards({title, contentText, desc, img, imgAlt, contentLink}) {
     return (
-        <Card style={{ width: "15.6rem" }}>
+        <Card style={{ width: "15.6rem" , border: "none"}}>
             <Card.Img variant="top" src={img} alt={imgAlt} />
             <Card.Body>
                 <p>{contentText}</p>

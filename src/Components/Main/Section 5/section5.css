@@ -12,6 +12,7 @@
 }
 .sec-5-container {
     display: flex;
+    gap: 20px;
     flex-direction: row;
     padding-bottom: 30px;
     border-bottom: 1px solid #f4c900;
@@ -188,10 +189,14 @@
     width: 70%;
 }
 @media only screen and (max-width: 999px) {
-    .eur::before,
-    .gbp::before {
-        /* left: 10px; */
-    }
+   .firsAreaSelectBox select{
+    border: none;
+    font-size: 20px;
+    padding-right: 20px;
+    color: #262626;
+    height: 45px;
+    outline: none;
+   }
     .sec-5 {
         display: none;
     }
@@ -215,17 +220,24 @@
         width: 50%;
         margin: 0 auto;
     }
+    .firstAreaInput , .firstAreaInput input{
+        width: 70%;
+    }
+    
 }
 @media only screen and (max-width: 768px) {
-    .eur::before,
-    .gbp::before {
-        /* left: -10px; */
-    }
+
     .sec-5-exchange table {
         font-size: 24px;
     }
     .sec-5-h2{
         font-size: 24px;
+    }
+    .firstAreaInput {
+        width: 70%;
+    }
+    .firstAreaInput input{
+        width: 70%;
     }
 
 }
@@ -233,5 +245,16 @@
     .sec-5-exchange table {
         font-size: 15px;
     }
-
+    .firstAreaInput {
+        width: 70%;
+    }
+    .firstAreaInput input{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .eur::before,
+.gbp::before {
+   display: none;
+}
 }

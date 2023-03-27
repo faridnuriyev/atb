@@ -1,25 +1,27 @@
-.sec-2{
-    background: url('../../../../public/assets/img/sec_2_bg.png');
+.sec-2 {
+    background: url("../../../../public/assets/img/sec_2_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left bottom;
     padding: 30px 52px;
+    margin-bottom: 30px;
     font-family: "Raleway", sans-serif;
 }
-.sec-2-title{
+.sec-2-title {
     display: flex;
     width: 100%;
     justify-content: space-between;
     border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 25px;
 }
-.sec-2-title h2{
+.sec-2-title h2 {
     display: flex;
     padding-bottom: 15px;
     color: #262626;
     font-size: 32px;
     font-weight: normal;
 }
-.sec-2-credit{
+.sec-2-credit {
     display: flex;
     align-items: flex-end;
     font-size: 14px;
@@ -28,4 +30,240 @@
     padding-right: 7px;
     color: #262626;
     border-bottom: 2px solid #f4c900;
+}
+.MuiSlider-root {
+    width: 550px !important;
+    border-radius: 0px !important;
+    color: #6c19ac !important;
+}
+.MuiSlider-thumb:hover,
+.MuiSlider-thumb {
+    box-shadow: none !important;
+}
+.MuiSlider-thumb {
+    width: 30px !important;
+    height: 30px !important;
+    background: #6c19ac !important;
+    border: 8px solid #fbfbfb !important;
+}
+.MuiSlider-rail {
+    background: #b3b3b3 !important;
+}
+.sec-2-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.cashSlider-box,
+.dateSlider-box {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    /* position: relative; */
+}
+.cashSlider-text,
+.dateSlider-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cashSlider-text p,
+.dateSlider-text p {
+    font-size: 18px;
+    color: #474747;
+}
+/* .cashSlider, .dateSlider{
+    position: absolute;
+    width: 440px;
+    bottom: -20px;
+} */
+.cashSlider-numb,
+.dateSlider-numb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cashSlider-numb p,
+.dateSlider-numb p {
+    color: #999;
+    margin-bottom: 20px;
+}
+.cashValue {
+    display: flex;
+    align-items: center;
+}
+.cashValue span {
+    font-size: 20px;
+}
+.cashValue input {
+    border: none !important;
+    height: 40px;
+    font-size: 25px;
+    margin-right: 10px;
+    width: 90%;
+    text-align: right;
+    color: #474747;
+    background: #fff;
+    outline: none;
+}
+.sec-2-policy {
+    display: flex;
+    align-items: center;
+}
+.sec-2-policy p {
+    cursor: pointer;
+}
+.sec-2-policy a {
+    color: inherit;
+    text-decoration: underline;
+    transition: 0.2s all;
+}
+.sec-2-policy a:hover {
+    color: #999;
+}
+.percentBox,
+.currentBox {
+    margin-bottom: 30px;
+}
+.percentValue sup,
+.manatValue sup {
+    font-size: 65%;
+    margin-left: 5px;
+}
+.percentValue,
+.manatValue {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #474747;
+}
+.creditDate {
+    font-size: 30px;
+    color: #474747;
+}
+.section-2-desktop-button {
+    display: block;
+}
+.section-2-desktop-button,
+.section-2-mobile-button {
+    margin-top: 60px;
+    display: inline-block;
+    width: 240px;
+    max-width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    background: #6c19ac;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.2s all;
+}
+.section-2-desktop-button:hover {
+    background: #421068;
+}
+.sec-2-leftSide {
+    padding-right: 35px;
+    margin-bottom: 30px;
+}
+.sec-2-rightSide {
+    margin-top: 30px;
+}
+.section-2-mobile {
+    display: none;
+}
+.sec-2-credit-mobile {
+    display: none;
+}
+.mobileButton {
+    display: none;
+}
+@media only screen and (max-width: 1000px) {
+    .MuiSlider-root {
+        width: 100% !important;
+    }
+    .sec-2-leftSide{
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .sec-2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sec-2-leftSide{
+        width: 100%;
+    }
+    .sec-2-title {
+        flex-direction: column;
+        gap: 20px;
+        border-bottom: none;
+    }
+    .sec-2-credit {
+        display: none;
+    }
+    .sec-2-credit-mobile {
+        display: flex;
+        border-bottom: 2px solid #f4c900;
+        width: max-content;
+    }
+    .section-2-desk {
+        display: none;
+    }
+    .section-2-mobile {
+        display: block;
+    }
+    .sec-2-main {
+        flex-direction: column;
+    }
+    .MuiSlider-root {
+        width: 100% !important;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -15px;
+        height: 4px;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        bottom: -35px;
+    }
+    .percentValue,
+    .manatValue {
+        font-size: 40px;
+    }
+    .sec-2-policy p {
+        font-size: 14px;
+    }
+    .cashSlider-text p,
+    .dateSlider-text p {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+    .cashValue input {
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .cashValue span {
+        font-size: 14px;
+    }
+    .creditDate {
+        font-size: 25px;
+    }
+    .section-2-desktop-button {
+        display: none;
+    }
+    .mobileButton {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .sec-2-rightSide {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #dbdbdb;
+    }
 }

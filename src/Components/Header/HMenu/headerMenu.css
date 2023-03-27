@@ -1,3 +1,116 @@
-.h{
-    display: none;
+.headerMenuContainer {
+    background: #f9f9f9;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 186px;
+    transition: 1s all;
+}
+
+.header-menu {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    transition: 1s all;
+}
+.leftSideHeaderMenu {
+    width: 10%;
+}
+.changingData ul li {
+    font-size: 16px;
+    color: #262626;
+    font-weight: bold;
+    margin-bottom: 10px;
+    max-width: 95%;
+}
+.rightSideHeaderMenu {
+    display: flex;
+}
+.headerData {
+    display: flex;
+}
+.fixedData {
+    display: flex;
+    gap: 30px;
+}
+
+.firstFixedData,
+.secondFixedData,
+.thirdFixedData {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.firstFixedData p,
+.secondFixedData p,
+.thirdFixedData p {
+    font-size: 12px;
+    color: #999999;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    padding-right: 35px;
+}
+.firstFixedData ul,
+.secondFixedData ul,
+.thirdFixedData ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    gap: 20px !important;
+}
+.firstFixedData ul li a,
+.secondFixedData ul li a,
+.thirdFixedData ul li a {
+    padding: 0 !important;
+}
+.pressButton {
+    display: flex;
+    align-items: start;
+}
+.closeMenu {
+    background: url("../../../../public/assets/img/sprite.png") -117px -89px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.reklamIconsContainer {
+    width: 100%;
+}
+.reklamIcons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.fbHmenu,
+.inHmenu,
+.instaHmenu {
+    background: url("../../../../public/assets/img/sprite.png") 0 -89px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.inHmenu {
+    background: url("../../../../public/assets/img/sprite.png") -33px -89px;
+}
+.instaHmenu {
+    background: url("../../../../public/assets/img/sprite.png") -68px -89px;
+}
+.thirdFixedData div a {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    color: #474747;
+}
+.thirdFixedData div span{
+    font-size: 12px;
+}
+.thirdFixedDataLitMenu ul {
+    margin-top: 30px;
+    gap: 5px !important;
+    list-style: disc;
 }

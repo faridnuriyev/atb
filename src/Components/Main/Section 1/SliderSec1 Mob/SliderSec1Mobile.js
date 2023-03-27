@@ -11,11 +11,12 @@ export default function SliderSec1Mobile() {
     return (
         <>
             <Swiper
+                loop={true}
                 scrollbar={{
                     hide: true,
                 }}
                 modules={[Scrollbar]}
-                className="mySwiper">
+                className="mySwiper sec1SliderMygov">
                 <SwiperSlide>
                     <a href="/#">
                         <img src="assets/img/section1Sliders/slider1.png" alt="slider1" />

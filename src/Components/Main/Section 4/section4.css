@@ -38,17 +38,79 @@
     margin: 0 auto;
     display: block;
 }
-.dashed-area-swiper{
+.dashed-area-swiper {
     display: none;
 }
 @media only screen and (max-width: 768px) {
     .sec-4-dashed-area {
         display: none;
     }
+    .dashed-area-swiper .swiper{
+        padding: 20px 0 !important;
+    }
     .underLine-sec4 {
         display: none;
     }
-    .dashed-area-swiper{
+    .dashed-area-swiper {
+        padding-top: 10px;
+        margin: 0 20px 30px 20px;
         display: block;
+        border: 1px dashed #e6e6e6;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sec4SliderMygov .swiper-slide {
+        width: 45% !important;
+        margin-right: 20px !important;
+    }
+    .card-body p {
+        color: #999;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-family: "Raleway", sans-serif;
+        text-align: start;
+    }
+    .card-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-variant-numeric: lining-nums;
+        color: #474747;
+        font-family: "Raleway", sans-serif;
+        text-align: start;
+    }
+    .card-text{
+        font-size: 18px;
+        margin-bottom: 25px;
+        color: #474747;
+        font-family: "Raleway", sans-serif;
+    }
+    .card-link{
+        color: #262626;
+        position: relative;
+        display: flex;
+        padding-right: 15px;
+        text-decoration: underline;
+        font-size: 16px;
+        text-align: start;
+    }
+    .card-link:hover{
+        text-decoration: none;
+        color: #262626;
+    }
+    .card-link::after{
+        position: absolute;
+        content: '';
+        background: url("../../../../public/assets/img/sprite.png") -182px 0;
+        width: 7px;
+        height: 9px;
+        right: 100px;
+        top: 8px;
+    }
+    .dashed-area-swiper span{
+        color: #262626;
+        background: #fff;
+        font-size: 26px;
+        margin: 20px 0;
+        padding: 0 10px;
     }
 }

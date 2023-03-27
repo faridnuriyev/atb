@@ -1,20 +1,36 @@
-const navBarData ={
+const navBarData = {
     data: [
         {
-            text: 'salam'
+            text: ["Bütün kreditlər", "İstehlak krediti", "Əmanət qarşılığında kredit"],
         },
         {
-            text: 'hello'
+            text: [
+                "Bütün ipotekalar",
+                "İpoteka krediti",
+                "Güzəştli ipoteka krediti",
+                "«MİDA» MMC xətti ilə Güzəştli ipoteka",
+            ],
         },
         {
-            text: 'privet'
+            text: ["ATB Card", "ATB Card Kredit", "ATB Card Premium", "Cashback"],
         },
         {
-            text: 'boncorno'
+            text: [
+                "Bütün xidmətlər",
+                "Arayış: Onlayn sifariş",
+                "Depozit qutuları",
+                "SMS bildiriş",
+                "3D Secure",
+                "Kartlar üzrə digər xidmətlər",
+                "Hesablaşma-kassa xidməti",
+                "Valyuta mübadiləsi əməliyyatları",
+                "Kart əməliyyatlarına tətbiq edilən məhdudiyyətlər",
+                "BankMARKET",
+            ],
         },
         {
-            text: 'gamarjoba'
-        }
-    ]
-}
-export {navBarData}
+            text: ["Bütün kreditlər", "İstehlak krediti", "Əmanət qarşılığında kredit"],
+        },
+    ],
+};
+export { navBarData };

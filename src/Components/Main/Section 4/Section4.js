@@ -27,6 +27,7 @@ function Section4() {
                 <div className="underLine-sec4"></div>
             </Container>
             <div className="dashed-area-swiper">
+            <span>Onlayn xidmətlər</span>
                 <Sec4Mob />
             </div>
         </section>

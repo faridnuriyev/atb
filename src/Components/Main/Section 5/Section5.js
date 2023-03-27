@@ -1,8 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import "./section5.css";
+import ExchangeCurr from "../../Services/Services";
 
 function Section5() {
+    const exchangeCurr = new ExchangeCurr();
+    const [value, setValue] = useState();
+    const [completedValue, setCompletedValue] = useState();
+    const [select1, setSelect1] = useState("AZN");
+    const [select2, setSelect2] = useState("USD");
+    const [input1, setInput1] = useState(100);
+    
+    const onChangeInput1 = (e) => {
+        setInput1(e.target.value);
+    };
+    const valueChanging = (x) => {
+        setCompletedValue((x / value).toFixed(2));
+    };
+
+    const exchangeSelect1 = (e) => {
+        setSelect1(e.target.value);
+    };
+    const exchangeSelect2 = (e) => {
+        setSelect2(e.target.value);
+    };
+
+    useEffect(() => {
+        exchangeCurr.getData(select1, select2).then((data) => setValue(data.result));
+    }, [select1, select2]);
+
+    useEffect(() => {
+        valueChanging(input1);
+    }, [value, input1]);
+
     return (
         <>
             <section className="sec-5">
@@ -61,12 +91,16 @@ function Section5() {
                                     <div className="firstAreaText">Satmaq istəyirəm</div>
                                     <div className="firstAreaContainer">
                                         <div className="firstAreaInput">
-                                            <input value={100} inputMode={"numeric"} type={"text"} />
+                                            <input
+                                                onChange={onChangeInput1}
+                                                defaultValue={input1}
+                                                type={"number"}
+                                            />
                                         </div>
                                         <div className="firstAreaSelect">
                                             <div className="firstAreaSelectBox">
-                                                <select>
-                                                    <option value={0}>AZN</option>
+                                                <select onChange={exchangeSelect1}>
+                                                    <option value={"AZN"}>AZN</option>
                                                     <option value={"USD"}>USD</option>
                                                     <option value={"EUR"}>EUR</option>
                                                     <option value={"GBP"}>GBP</option>
@@ -80,10 +114,10 @@ function Section5() {
                                     <div className="secondAreaSec5Text">Alacam</div>
                                     <div className="secondAreaContainer">
                                         <div className="secondAreaNumber">
-                                            <span>58.75</span>
+                                            <span>{completedValue != "NaN" ? completedValue : ""}</span>
                                         </div>
                                         <div className="secondAreaSelectBox">
-                                            <select>
+                                            <select onChange={exchangeSelect2}>
                                                 <option value={"USD"}>USD</option>
                                                 <option value={"AZN"}>AZN</option>
                                                 <option value={"EUR"}>EUR</option>
@@ -97,6 +131,7 @@ function Section5() {
                     </div>
                 </Container>
             </section>
+
             <section className="sec-5-mobile">
                 <h2 className="sec-5-h2">Valyuta məzənnəsi*</h2>
                 <div className="sec-5-container">
@@ -149,12 +184,12 @@ function Section5() {
                             <div className="firstAreaText">Satmaq istəyirəm</div>
                             <div className="firstAreaContainer">
                                 <div className="firstAreaInput">
-                                    <input value={100} inputMode={"numeric"} type={"text"} />
+                                    <input onChange={onChangeInput1} defaultValue={input1} type={"number"} />
                                 </div>
                                 <div className="firstAreaSelect">
                                     <div className="firsAreaSelectBox">
-                                        <select>
-                                            <option value={0}>AZN</option>
+                                        <select onChange={exchangeSelect1}>
+                                            <option value={"AZN"}>AZN</option>
                                             <option value={"USD"}>USD</option>
                                             <option value={"EUR"}>EUR</option>
                                             <option value={"GBP"}>GBP</option>
@@ -168,12 +203,12 @@ function Section5() {
                             <div className="secondAreaSec5Text">Alacam</div>
                             <div className="secondAreaContainer">
                                 <div className="secondAreaNumber">
-                                    <span>58.75</span>
+                                    <span>{completedValue != "NaN" ? completedValue : ""}</span>
                                 </div>
                                 <div className="secondAreaSelectBox">
-                                    <select>
-                                        <option value={0}>AZN</option>
+                                    <select onChange={exchangeSelect2}>
                                         <option value={"USD"}>USD</option>
+                                        <option value={"AZN"}>AZN</option>
                                         <option value={"EUR"}>EUR</option>
                                         <option value={"GBP"}>GBP</option>
                                     </select>

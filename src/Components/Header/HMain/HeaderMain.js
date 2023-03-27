@@ -1,11 +1,20 @@
 import { useState } from "react";
 import { Button, Container, Offcanvas } from "react-bootstrap";
 import HeaderMenuMobile from "../HeaderMenuMobile/HeaderMenuMobile";
+import HeaderMenu from "../HMenu/HeaderMenu";
 import "./headerMain.css";
+import { navBarData } from "../../../data";
 
-function HeaderMain() {
+function HeaderMain({onChangeTest}) {
     const [show, setShow] = useState(false);
+    const [num, setNum] = useState(0);
+    
+    const [kredit, setKredit] = useState(false)
 
+    const openKredit = (x, idx) =>{
+        setKredit(x)
+        setNum(idx)
+    }
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
@@ -72,7 +81,7 @@ function HeaderMain() {
                                                 </li>
                                             </ul>
                                         </li>
-                                        <a href="/#" className="search"></a>
+                                        <a href="/#" className="search" onClick={()=> onChangeTest(true)}></a>
                                     </ul>
                                 </div>
                             </div>
@@ -82,21 +91,23 @@ function HeaderMain() {
                             <div className="headerMain-bottom-menu">
                                 <ul>
                                     <li>
-                                        <a href="/#">Kreditlər</a>
+                                        <a onClick={() => openKredit(true, 0)} href="/#">Kreditlər</a>
                                     </li>
                                     <li>
-                                        <a href="/#">İpoteka</a>
+                                        <a onClick={() => openKredit(true, 1)} href="/#">İpoteka</a>
                                     </li>
                                     <li>
-                                        <a href="/#">Kartlar</a>
+                                        <a onClick={() => openKredit(true, 2)} href="/#">Kartlar</a>
                                     </li>
                                     <li>
-                                        <a href="/#">Əmanətlər</a>
+                                        <a  href="/#">Əmanətlər</a>
                                     </li>
                                     <li>
-                                        <a href="/#">Xidmətlər</a>
+                                        <a onClick={() => openKredit(true, 3)} href="/#">Xidmətlər</a>
                                     </li>
                                 </ul>
+                               { kredit ? <HeaderMenu kredit={kredit} num={num} data={navBarData.data} openKredit={openKredit}  /> : null}
+
                             </div>
                             <div className="atb360App">
                                 <img src="assets/img/apple.svg" alt="ios" />

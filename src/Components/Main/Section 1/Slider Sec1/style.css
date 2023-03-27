@@ -190,7 +190,11 @@ body {
 .autoplay-progress {
     display: none;
 }
-
+@media only screen and (max-width: 850px) {
+    .swiper-pagination {
+        margin-left: 390px;
+    }
+}
 @keyframes play {
     0% {
         background-position: 0;

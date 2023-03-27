@@ -1,11 +1,11 @@
 import { Container} from "react-bootstrap";
 import "./headerSearch.css";
 
-function HeaderSearch() {
+function HeaderSearch({test, onChangeTest}) {
 
   return (
     <>
-          <div className="headerSearch">
+          <div className={test ? "headerSearch" : "headerSearch minusMargin"}>
             <Container>
               <div className="headerSearchForm">
                 <form className="headerInput">
@@ -16,7 +16,7 @@ function HeaderSearch() {
                   />
                   <button className="searchIcon"></button>
                 </form>
-                <button type="button" className="closeIcon btn-close" ></button>
+                <button onClick={() => onChangeTest(false)} type="button" className="closeIcon btn-close" ></button>
               </div>
             </Container>
           </div>
